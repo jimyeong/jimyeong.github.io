@@ -1,31 +1,30 @@
-name: Herring Cove
-author: Herring Cove
-baseurl: /herring-cove
-description: theme for jekyll
-github: http://www.github.com/arnp
-twitter: http://www.twitter.com/
-facebook: http://www.facebook.com
-linkedin: http://www.linkedin.com
-email: rnpatel[at]me.com
-location: 42°2'16"N   70°12'47"W
-disqus: diqus-username
 
-##Make sure to edit the above fields, especially for disqus.
+##
+# RLStevenson Theme Options
+####
 
+# For baseurl:
+# Use '' for / or '/your-dir' for another directory
 
-highlighter: pygments
-markdown: redcarpet
-redcarpet:
-  extensions: ["tables"]
+title:		RLStevenson
+description:	'A Bootstrap based clone of the Hyde theme by mdo.'
+freetext:	'Released under an MIT license - feel free to make pull requests.'
+baseurl:	'/'
+paginate:	3
+version:	0.1.0
+colorscheme:	scheme-gulfracing
 
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
+ga:		'UA-123-456'
+piwikSiteID:	''
+piwikURL:	''
+
+author:
+ url:		https://www.exchangerate-api.com
+ name:		'ExchangeRate-API'
+
+github:
+ repo:		https://github.com/ExchangeRate-API/rlstevenson-jekyll-theme
+
+gems:		[jekyll-paginate]
+
+exclude:	['README.md', 'Gemfile.lock', 'Gemfile', '*.gemspec', '*.gem']
