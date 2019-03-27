@@ -1,36 +1,15 @@
 ---
 layout: default
+title: A guide to your digital life
 ---
 
-<div class="posts">
-	
-	<!-- This loops through the paginated posts -->
-	{% for post in paginator.posts %}
-		<div class="post">
+<div class="listing">
+    {% for post in paginator.posts %}
+    <div class="post other link">
+      <h2><span class="mega-octicon octicon-flame" style="min-width: 32px;"></span><a href="/white-paper{{post.url}}">{{ post.title }}</a></h2>
+      <p class="post-date">{{ post.date | date_to_string }}</p>
 
-			<div class="post-heading">
-				<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-				<span>{{ post.date | date_to_string }} by {{ post.author }}</span>
-			</div>
-
-			{{ post.excerpt }}
-
-			<p>&#187; <a href="{{ site.baseurl }}{{ post.url }}" class="button button-primary">View Post</a></p>
-
-		</div>
-	{% endfor %}
-
-</div>
-
-<!-- Pagination links -->
-<div class="pagination">
-	{% if paginator.previous_page %}
-		<a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous btn btn-default">Previous Page</a>
-	{% endif %}
-
-	<span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
-
-	{% if paginator.next_page %}
-		<a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next btn btn-default">Next Page</a>
-	{% endif %}
+      <p>{{ post.excerpt }}</p>
+    </div>
+    {% endfor %}
 </div>
