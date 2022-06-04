@@ -1,0 +1,82 @@
+---
+title: 'Preventing IOS elastic scrolling stretegies. on IOS'
+date: 2022-04-14
+permalink: /posts/preventing_elastic_scroll_on_ios/
+tags:
+  - IOS
+  - prevent elastic scroll
+  - rubber band effect
+  - inertia
+---
+## Preventing IOS elastic scrolling stretegies.
+
+*"keep the elastic effect out of my f...king page"*
+
+<br/>
+
+### 1. using e.preventDefault() when window.scrollTop < 0
+> didn't work properly
+> e.preventDefault acts on basic actions that can be excuted without any event handlers like checkbox, radio button, refresh after form submitting and etc.
+
+```
+// try this one ->  scrolling doesn't work at all
+<body ontouchmove=BlockMove(event)>
+...
+</body>
+<script>
+function BlockMove(event){
+    event.preventDefault();
+}
+</script>
+```
+<br/>
+
+
+### 2. set {position:fixed, height:100vh, overflow:hidden} at the highest level container that is containing elements on the page.
+> the elastic scroll effect acts on Document so even if you set those properties to your css file, actually, the scrolling event is being fired but it looks like the elastic effect is not working as you wanted. because position fixed gets your elements to be shown based on your viewport. if you set up the screen for the scrollbar to be seen, then you can see that the effect actually hasn't been gone.
+
+<br/>
+
+
+<br/>
+
+### ***...so then how to workaround this issue?***
+
+* **create scrolling div box** and set the css like **{overflow-y:scroll, height: 100%}** and **add new scroll event listener to a new div** inside the highest level container element having {position:fixed, left:0; right:0, top:0, overflow-y:hidden, height: 100vh}  
+
+
+<br/>
+
+**example**
+```
+// style.scss
+
+.toplevel_container{
+  position: fixed;
+  left:0;
+  right:0;
+  top:0;
+  height: 100vh;
+  overflow: hidden;
+  .scroll_area{
+      height: 100%;
+      overflow-y: scroll;
+
+      ... else css properties you need
+  }
+}
+
+```
+
+
+3. the second solution above is a bit unstable, you will be able to see sometimes scrolling area doesn't work as you want. so.. **threre is also the last way left that I've found out, "Lock the body element dynamically by {height: 100vh; overflow: hidden}"** and child element should have height 100% in this case.
+```
+if(lock){
+  document.body.style.height = "100vh";
+  document.body.style.overflow = "hidden";
+}
+if(!lock){
+  document.body.style.height = "auto";
+  document.body.style.overflow = "auto";
+}
+```
