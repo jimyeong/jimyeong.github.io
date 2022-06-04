@@ -1,7 +1,7 @@
 ---
-permalink: /posts
-title: "posts"
-excerpt: "Post"
+permalink: /cv
+title: "CV"
+excerpt: "Cv"
 author_profile: true
 layout: archive
 #redirect_from: 
