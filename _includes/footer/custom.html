@@ -1,3 +1,116 @@
 <!-- start custom footer snippets -->
 
+<footer>
+
+
+    <script>
+
+        const didYouWorkout = {
+            name: "workout or not (2 | 1)",
+            data: [1, 1, 2, 2, 1, 2, 2, 1, 2, 2, 2]
+        }
+        const didYouRead = {
+            name: "reading or not (2 | 1)",
+            data: [2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2]
+        }
+        // 아침에 작성
+        const morningStudy = {
+            name: 'morning study (hour)',
+            data: [1.0, 1.5, 1.5, 1.5, 1.5, 1.0, 1.5, 1.5, 1.25, 1.25, 1.5]
+        }
+        const morningTimeWeight = {
+            name: 'morning time weight (1-5)',
+            data: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+        }
+        const morningConcentration = {
+            name: 'morningConcentration (1-3)',
+            data: [3, 1, 3, 1, 3, 3, 2, 3, 3, 3, 1]
+        }
+        const faigue = {
+            name: 'fatigue level (1-3)',
+            data: [1, 3, 1, 3, 1, 1, 1, 2, 3, 1, 3]
+        }
+        const durationSleep = {
+            name: "duration of sleep (hour)",
+            data: [6.0, 7.0, 4.5, 5, 5.5, 6, 5.5, 5, 5, 5, 4.5]
+        }
+        const calc = {
+            0: morningStudy.data[0] * morningTimeWeight.data[0] * morningConcentration.data[0] * didYouRead.data[0] * didYouWorkout.data[0],
+            1: morningStudy.data[1] * morningTimeWeight.data[1] * morningConcentration.data[1] * didYouRead.data[1] * didYouWorkout.data[1],
+            2: morningStudy.data[2] * morningTimeWeight.data[2] * morningConcentration.data[2] * didYouRead.data[2] * didYouWorkout.data[2],
+            3: morningStudy.data[3] * morningTimeWeight.data[3] * morningConcentration.data[3] * didYouRead.data[3] * didYouWorkout.data[3],
+            4: morningStudy.data[4] * morningTimeWeight.data[4] * morningConcentration.data[4] * didYouRead.data[4] * didYouWorkout.data[4],
+            5: morningStudy.data[5] * morningTimeWeight.data[5] * morningConcentration.data[5] * didYouRead.data[5] * didYouWorkout.data[5],
+            6: morningStudy.data[6] * morningTimeWeight.data[6] * morningConcentration.data[6] * didYouRead.data[6] * didYouWorkout.data[6],
+            7: morningStudy.data[7] * morningTimeWeight.data[7] * morningConcentration.data[7] * didYouRead.data[7] * didYouWorkout.data[7],
+            8: morningStudy.data[8] * morningTimeWeight.data[8] * morningConcentration.data[8] * didYouRead.data[8] * didYouWorkout.data[8],
+            9: morningStudy.data[9] * morningTimeWeight.data[9] * morningConcentration.data[9] * didYouRead.data[9] * didYouWorkout.data[9],
+            10: morningStudy.data[10] * morningTimeWeight.data[10] * morningConcentration.data[10] * didYouRead.data[10] * didYouWorkout.data[10],
+        }
+        const totalScoreInTheMorning = {
+            name: 'assessment',
+            // data: [1.0 * 5 * 3, 1.5 * 5 * 1, 1.5 * 5 * 3],
+            data: [calc[0], calc[1], calc[2], calc[3], calc[4], calc[5], calc[6], calc[7], calc[8], calc[9], calc[10]]
+        }
+        const totalScoreInTheMorningInLine = {
+            name: 'assessment',
+            // data: [1.0 * 5 * 3, 1.5 * 5 * 1, 1.5 * 5 * 3],
+            data: [calc[0], calc[1], calc[2], calc[3], calc[4], calc[5], calc[6], calc[7], calc[8], calc[9], calc[10]],
+            type: "spline"
+        }
+        const dates = [
+            '2022.05.25(Wed)',
+            '2022.05.26(Thu)',
+            '2022.05.27(Fri)',
+            "2022.05.28(Sat)",
+            "2022.05.29(Sun)",
+            "2022.05.30(Mon)",
+            "2022.05.31(Tue)",
+            "2022.06.01(Wed)",
+            "2022.06.02(Thu)",
+            "2022.06.03(Fri)",
+            "2022.06.04(Sat)"
+        ]
+
+        Highcharts.chart('container', {
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Cre-habiter'
+            },
+            subtitle: {
+                text: 'If you can turn things into what you can see, you can have the control'
+            },
+            xAxis: {
+                categories: dates,
+                crosshair: true
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Daily assessment'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [morningStudy, morningTimeWeight, morningConcentration, faigue, durationSleep, didYouRead, didYouWorkout, totalScoreInTheMorning, totalScoreInTheMorningInLine],
+            measure: {
+
+            }
+        });
+    </script>
+</footer>
 <!-- end custom footer snippets -->
