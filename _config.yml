@@ -107,7 +107,7 @@ author:
   name             : "Jimmy Jung"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "**React** developer <br/> Interested in cloud skills like **AWS** <br/>"
-  location         : "South Korea -> UK(22.07.25 -)"
+  location         : "South Korea"
   email            : "jimmy.dev0210@gmail.com"
   links:
     - #label: "Email"
