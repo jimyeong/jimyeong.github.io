@@ -6,32 +6,32 @@
 
     const didYouWorkout = {
         name: "workout or not (2 | 1)",
-        data: [1, 1, 2, 2, 1, 2, 2, 1, 2, 2, 2, 2]
+        data: [1, 1, 2, 2, 1, 2, 2, 1, 2, 2, 2, 2, 1]
     }
     const didYouRead = {
         name: "reading or not (2 | 1)",
-        data: [2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+        data: [2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1]
     }
     // 아침에 작성
     const morningStudy = {
         name: 'morning study (hour)',
-        data: [1.0, 1.5, 1.5, 1.5, 1.5, 1.0, 1.5, 1.5, 1.25, 1.25, 1.5, 1.5]
+        data: [1.0, 1.5, 1.5, 1.5, 1.5, 1.0, 1.5, 1.5, 1.25, 1.25, 1.5, 1.5, 2.0]
     }
     const morningTimeWeight = {
         name: 'morning time weight (1-5)',
-        data: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+        data: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
     }
     const morningConcentration = {
         name: 'morningConcentration (1-3)',
-        data: [3, 1, 3, 1, 3, 3, 2, 3, 3, 3, 1, 3]
+        data: [3, 1, 3, 1, 3, 3, 2, 3, 3, 3, 1, 3, 3]
     }
     const faigue = {
         name: 'fatigue level (1-3)',
-        data: [1, 3, 1, 3, 1, 1, 1, 2, 3, 1, 3, 1]
+        data: [1, 3, 1, 3, 1, 1, 1, 2, 3, 1, 3, 1, 1]
     }
     const durationSleep = {
         name: "duration of sleep (hour)",
-        data: [6.0, 7.0, 4.5, 5, 5.5, 6, 5.5, 5, 5, 5, 4.5, 5.5]
+        data: [6.0, 7.0, 4.5, 5, 5.5, 6, 5.5, 5, 5, 5, 4.5, 5.5, 5]
     }
     const calc = {
         0: morningStudy.data[0] * morningTimeWeight.data[0] * morningConcentration.data[0] * didYouRead.data[0] * didYouWorkout.data[0],
@@ -46,16 +46,17 @@
         9: morningStudy.data[9] * morningTimeWeight.data[9] * morningConcentration.data[9] * didYouRead.data[9] * didYouWorkout.data[9],
         10: morningStudy.data[10] * morningTimeWeight.data[10] * morningConcentration.data[10] * didYouRead.data[10] * didYouWorkout.data[10],
         11: morningStudy.data[11] * morningTimeWeight.data[11] * morningConcentration.data[11] * didYouRead.data[11] * didYouWorkout.data[11],
+        12: morningStudy.data[12] * morningTimeWeight.data[12] * morningConcentration.data[12] * didYouRead.data[12] * didYouWorkout.data[12],
     }
     const totalScoreInTheMorning = {
         name: 'assessment',
         // data: [1.0 * 5 * 3, 1.5 * 5 * 1, 1.5 * 5 * 3],
-        data: [calc[0], calc[1], calc[2], calc[3], calc[4], calc[5], calc[6], calc[7], calc[8], calc[9], calc[10], calc[11]]
+        data: [calc[0], calc[1], calc[2], calc[3], calc[4], calc[5], calc[6], calc[7], calc[8], calc[9], calc[10], calc[11], calc[12]]
     }
     const totalScoreInTheMorningInLine = {
         name: 'assessment',
         // data: [1.0 * 5 * 3, 1.5 * 5 * 1, 1.5 * 5 * 3],
-        data: [calc[0], calc[1], calc[2], calc[3], calc[4], calc[5], calc[6], calc[7], calc[8], calc[9], calc[10], calc[11]],
+        data: [calc[0], calc[1], calc[2], calc[3], calc[4], calc[5], calc[6], calc[7], calc[8], calc[9], calc[10], calc[11], calc[12]],
         type: "spline"
     }
     const dates = [
@@ -71,6 +72,7 @@
         "2022.06.03(Fri)",
         "2022.06.04(Sat)",
         "2022.06.05(Sun)",
+        "2022.06.05(Mon)",
     ]
 
     Highcharts.chart('container', {
