@@ -40,7 +40,7 @@ Associate Degree **(3.2)**
 
 #### WORK EXPERIENCE 
 
-Web front-end developer      
+##### Web front-end developer      
 EdenIT  
 **06.2021-06.2022**
 - Develop a web application for orphan kids (incl. Chatting, Video, Survey,Quiz solving features)
@@ -54,14 +54,14 @@ EdenIT
 <br/>
 
 
-Full-stack developer    
+##### Full-stack developer    
 O2corn holdings  
 **06.2019 - 04.2020**  
 - Co-develop a restaurant recommendation Android application based on location  
 
 <br/>
 
-Korean Army  
+##### Korean Army  
 **11.2014 - 08.2016**  
 - Deliver petrol to fill Army tanks
 - Volunteer to give counseling to young recruits 
