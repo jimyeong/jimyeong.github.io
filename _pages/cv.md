@@ -32,15 +32,17 @@ Computer Science (3.5)
 02.2020 - 06.2022  
 - Important Assignments (AWS CCP)  
 
-The Academic Credit Bank System  
-Computer Visual Graphic design  
+<br/>
+
+The Academic Credit Bank System    
+Computer Visual Graphic design    
 Associate Degree (3.2)  
 02.2012 - 02.2014  
 
 #### WORK EXPERIENCE 
 
-Web front-end developer    
-EdenIT
+Web front-end developer      
+EdenIT  
 **06.2021-06.2022**
 - Develop a web application for orphan kids (incl. Chatting, Video, Survey,Quiz solving features)
 - Develop a hybrid web application that suggests low-interest products for university students)
@@ -53,14 +55,14 @@ EdenIT
 <br/>
 
 
-Full-stack developer  
-O2corn holdings
-**06.2019 - 04.2020**
+Full-stack developer    
+O2corn holdings  
+**06.2019 - 04.2020**  
 - Co-develop a restaurant recommendation Android application based on location
 <br/>
 
-Korean Army
-**11.2014 - 08.2016**
+Korean Army  
+**11.2014 - 08.2016**  
 - Deliver petrol to fill Army tanks
 - Volunteer to give counseling to young recruits 
 - Member of the choir (singer) and band (bass player) Sing a song in choir, Play Bass session in the church
@@ -69,18 +71,18 @@ Korean Army
 
 #### SKILLS & TOOLS 
 
-- Software:  React,CSS,HTML,Jquery,Grunt,nodeJS, MySQL, Java, Photoshop, Adobe XD, Git, AWS
-- Languages: Korean (native); English (Intermediate)
-Time-management 
-- Maintaining a positive perspective (OR positive thinking/mindset)
+- Software:  React, CSS, HTML, Jquery, GruntJS, nodeJS, MySQL, Java, Photoshop, Adobe XD, Git, AWS, C++  
+- Languages: Korean (native), English (Intermediate)
+Time-management   
+- Maintaining a positive perspective (OR positive thinking/mindset)  
 
 <br/>
 #### INTERESTS
-- Reading books 
-- Learning languages(english)
-- Playing tennis
-- The way to make a good conversations
-- Learning new technologies
+- Reading books   
+- Learning languages(english)  
+- Playing tennis  
+- The way to make a good conversations  
+- Learning new technologies  
 
 
 
