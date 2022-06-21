@@ -28,16 +28,15 @@ My can-do attitude has allowed me to take on and complete projects beyond my yea
 #### EDUCATION
 
 Korea Open National University  
-Computer Science (3.5)  
-02.2020 - 06.2022  
-- Important Assignments (AWS CCP)  
+Computer Science **(3.5)**  
+**02.2020 - 06.2022**  
+- Important Assignments (AWS CCP)   
 
-<br/>
 
 The Academic Credit Bank System    
 Computer Visual Graphic design    
-Associate Degree (3.2)  
-02.2012 - 02.2014  
+Associate Degree **(3.2)**  
+**02.2012 - 02.2014**  
 
 #### WORK EXPERIENCE 
 
@@ -58,7 +57,8 @@ EdenIT
 Full-stack developer    
 O2corn holdings  
 **06.2019 - 04.2020**  
-- Co-develop a restaurant recommendation Android application based on location
+- Co-develop a restaurant recommendation Android application based on location  
+
 <br/>
 
 Korean Army  
