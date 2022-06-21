@@ -61,6 +61,22 @@ O2cornHoldings
 
 <br/>
 
+**Web front-end developer**    
+ShareKIM    
+Internship program   
+02.2019 - 05.2019    
+- Internship  
+- Create calendar module for house renting contract, using react
+<br/>
+
+**Web front-end developer**    
+Banobagi plastic surgery hospital    
+01.2018 - 06.2018    
+- Create web pages, using HTML,CSS,JS
+- Refactor HTML, scss, js source code over the website
+<br/>
+
+
 **Korean Army**  
 11.2014 - 08.2016    
 - Deliver petrol to fill Army tanks
