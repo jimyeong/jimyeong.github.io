@@ -11,7 +11,9 @@ layout: archive
 
 #### INTRODUCTION 
 
-I am an inquisitive web developer with three years of professional experience, eager to work and learn as part of a global company. My can-do attitude has allowed me to take on and complete projects beyond my years. 
+I am an inquisitive web developer with three years of professional experience,  
+eager to work and learn as part of a global company.  
+My can-do attitude has allowed me to take on and complete projects beyond my years. 
 
 - Multilingual (Korean & English) 
 - Web developer 
@@ -20,11 +22,12 @@ I am an inquisitive web developer with three years of professional experience, e
 - Inquisitive; fast learner; can-do attitude
 
 <br/>
+
 #### EDUCATION
 
-Korea Open National University
-Computer Science (3.5)
-02.2020 - 06.2022
+Korea Open National University  
+Computer Science (3.5)  
+02.2020 - 06.2022  
 - Important Assignments (AWS CCP)
 
 The Academic Credit Bank System
@@ -32,10 +35,9 @@ Computer Visual Graphic design
 Associate Degree (3.2)
 02.2012 - 02.2014 
 
-<br/>
 #### WORK EXPERIENCE 
 
-Web front-end developer
+Web front-end developer    
 EdenIT
 **06.2021-06.2022**
 - Develop a web application for orphan kids (incl. Chatting, Video, Survey,Quiz solving features)
