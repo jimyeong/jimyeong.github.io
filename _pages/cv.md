@@ -64,8 +64,7 @@ O2cornHoldings
 ShareKIM    
 Internship program   
 02.2019 - 05.2019    
-- Internship  
-- Create calendar module for house renting contract, using react  
+- Create calendar module for house renting contract, using React,Typescript    
 <br/>
 
 **Web front-end developer**    
