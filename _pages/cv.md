@@ -73,7 +73,7 @@ Internship program
 Banobagi plastic surgery hospital    
 01.2018 - 06.2018    
 - Create web pages, using HTML,CSS,JS
-- Refactor HTML, scss, js source code over the website
+- Refactor HTML, scss, js source code over the website  
 <br/>
 
 
@@ -81,7 +81,7 @@ Banobagi plastic surgery hospital
 11.2014 - 08.2016    
 - Deliver petrol to fill Army tanks
 - Volunteer to give counseling to young recruits 
-- Member of the choir (singer) and band (bass player) Sing a song in choir, Play Bass session in the church
+- Member of the choir (singer) and band (bass player) Sing a song in choir, Play Bass session in the church  
 
 <br/>
 
