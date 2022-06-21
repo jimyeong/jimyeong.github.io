@@ -18,8 +18,10 @@ My can-do attitude has allowed me to take on and complete projects beyond my yea
 - Multilingual (Korean & English) 
 - Web developer 
 - Computer Science graduate
-- 2 studies ; 3 years of professional experience 
-- Inquisitive; fast learner; can-do attitude
+- 3 years of professional experience 
+- Inquisitive
+- fast learner
+- can-do attitude
 
 <br/>
 
@@ -28,12 +30,12 @@ My can-do attitude has allowed me to take on and complete projects beyond my yea
 Korea Open National University  
 Computer Science (3.5)  
 02.2020 - 06.2022  
-- Important Assignments (AWS CCP)
+- Important Assignments (AWS CCP)  
 
-The Academic Credit Bank System
-Computer Visual Graphic design
-Associate Degree (3.2)
-02.2012 - 02.2014 
+The Academic Credit Bank System  
+Computer Visual Graphic design  
+Associate Degree (3.2)  
+02.2012 - 02.2014  
 
 #### WORK EXPERIENCE 
 
