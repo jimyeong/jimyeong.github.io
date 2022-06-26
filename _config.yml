@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Jimmy Jung"
-  avatar           : "/assets/images/bio-photo.png"
+  avatar           : "/assets/images/bio-photo.jpeg"
   bio              : "**React** developer <br/> Interested in cloud skills like **AWS** <br/>"
   location         : "South Korea"
   email            : "jimmy.dev0210@gmail.com"
