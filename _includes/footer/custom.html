@@ -3,6 +3,12 @@
 
 
 <script>
+    const bodyweight = {
+        name: "body weight(72)",
+        data: [75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 75.8, 74],
+        type: "spline"
+
+    }
     const meditation = {
         name: "meditate or not (2 | 1)",
         data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 1, 2, 1, 2, 1, 2, 1, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2]
@@ -166,7 +172,7 @@
                 borderWidth: 0
             }
         },
-        series: [meditation, morningStudy, morningTimeWeight, morningConcentration, faigue, durationSleep, didYouRead, didYouWorkout, intensityOfTheDay, totalScoreInTheMorning, totalScoreInTheMorningInLine],
+        series: [bodyweight, meditation, morningStudy, morningTimeWeight, morningConcentration, faigue, durationSleep, didYouRead, didYouWorkout, intensityOfTheDay, totalScoreInTheMorning, totalScoreInTheMorningInLine],
         measure: {
 
         }
