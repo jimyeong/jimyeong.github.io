@@ -1,9 +1,11 @@
 # main links
 main:
-  - title: "CV"
-    url: /cv
-  # - title: "Posts"
-  #  url: /posts
+  - title: "Tech posts"
+    url: /posts
+  - title: "English"
+    url: /english
+  - title: "Journal"
+    url: /journal
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"

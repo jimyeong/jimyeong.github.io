@@ -1,0 +1,10 @@
+---
+layout: archive
+---
+
+{{ content }}
+<br />
+{% for item in site.journal %}
+<h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+<p>{{ item.description }}</p>
+{% endfor %}
