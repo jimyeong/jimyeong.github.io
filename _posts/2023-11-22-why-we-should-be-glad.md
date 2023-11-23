@@ -22,12 +22,12 @@ So, find people who are in the position where you long to belong.
 But there is a mindset, you have to prepare for yourself.  
 get used to being in the inferior’s place.  
 <br/>
-just get used to hearing people demanding on you.
-just get used to seeing many people being far ahead of you in terms of social status.
-just get used to having small ground to stand amongst them.
-just don’t get jealous of other people, seeing them riding high.
-just give them applause.
-just applaud their success.
+Just get used to hearing people demanding on you.
+Just get used to seeing many people being far ahead of you in terms of social status.
+Just get used to having small ground to stand amongst them.
+Just don’t get jealous of other people, seeing them riding high.
+Just give them applause.
+Just applaud their success.
 
 ![at germanmarket](/assets/images/germanmarket.jpeg)
 
@@ -36,7 +36,7 @@ If you are in the mindset where you can’t be really glad with people riding hi
 then you won’t be able to stay amongst outstanding people when you’re desperate for growth, not because of them, but because of your pride and jealousy.
 In the end, It will actually become an obstacle that hinders you from getting better
 
-straight away, You will come to want to step out of the place because your pride won’t allow you to suffer from the feeling of becoming tiny.
+Straight away, you will come to want to step out of the place because your pride won’t allow you to suffer from the feeling of becoming tiny.
 
 <br/>
 So, this is the reason why you should be glad to watch people riding high.
