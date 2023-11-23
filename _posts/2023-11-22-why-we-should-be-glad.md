@@ -15,7 +15,7 @@ I think it’s got something to do with your growth closely.
 
 <br/>
 First of all, I would like to start off with establishing the basic truth.  
-If you want to be good at something, you have to learn from people who are already good., being surrounded by them.
+If you want to be good at something, you have to learn from people who are already good, being surrounded by them.
 <br/>
 So, find people who are in the position where you long to belong.  
 But there is a mindset, you have to prepare for yourself.  
