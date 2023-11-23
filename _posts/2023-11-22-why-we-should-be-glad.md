@@ -29,6 +29,8 @@ just don’t get jealous of other people, seeing them riding high.
 just give them applause.
 just applaud their success.
 
+![at germanmarket](/assets/images/germanmarket.jpeg)
+
 <br/>
 If you are in the mindset where you can’t be really glad with people riding high,  
 then you won’t be able to stay amongst outstanding people when you’re desperate for growth, not because of them, but because of your pride and jealousy.
