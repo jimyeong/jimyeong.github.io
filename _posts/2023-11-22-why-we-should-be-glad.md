@@ -22,12 +22,12 @@ So, find people who are in the position where you long to belong.
 But there is a mindset, you have to prepare for yourself.  
 get used to being in the inferior’s place.  
 <br/>
-Just get used to hearing people demanding on you.
-Just get used to seeing many people being far ahead of you in terms of social status.
-Just get used to having small ground to stand amongst them.
-Just don’t get jealous of other people, seeing them riding high.
-Just give them applause.
-Just applaud their success.
+Just get used to hearing people demanding on you. <br/>
+Just get used to seeing many people being far ahead of you in terms of social status. <br/>
+Just get used to having small ground to stand amongst them. <br/>
+Just don’t get jealous of other people, seeing them riding high. <br/>
+Just give them applause.  <br/>
+Just applaud their success.  <br/>
 
 ![at germanmarket](/assets/images/germanmarket.jpeg)
 
