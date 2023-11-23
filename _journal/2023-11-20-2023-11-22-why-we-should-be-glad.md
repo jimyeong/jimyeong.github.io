@@ -1,5 +1,5 @@
 ---
-title: "Why being Jealousy of someone is actually harmful for yourself"
+title: "Why being Jealousy of someone's success is actually harmful for yourself"
 date: 2024-10-12
 permalink: /posts/2023-11-22-why-we-should-be-glad/
 type: posts
