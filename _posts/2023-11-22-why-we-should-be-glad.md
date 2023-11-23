@@ -9,7 +9,7 @@ tags:
   - English practise
 ---
 
-![at a Northhampton camping place](/assets/images/bornfire.jpeg)
+![at a Northhampton camping place](/assets/images/bornfire2.jpeg)
 
 I think it’s got something to do with your growth closely.
 
@@ -39,5 +39,3 @@ straight away, You will come to want to step out of the place because your pride
 So, this is the reason why you should be glad to watch people riding high.
 <br/>
 Because, it will become the practise for you to set yourself amongst outstanding people, which will lead you to grow up more.
-
-![at a Northhampton camping place](/assets/images/bornfire2.jpeg)
