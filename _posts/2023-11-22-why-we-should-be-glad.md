@@ -9,7 +9,11 @@ tags:
   - English practise
 ---
 
-I think it’s got something to do with your growth closely.  
+![at a Northhampton camping place](/assets/images/bornfire.jpeg)
+
+I think it’s got something to do with your growth closely.
+
+<br/>
 First of all, I would like to start off with establishing the basic truth.  
 If you want to be good at something, you have to learn from people who are already good., being surrounded by them.
 <br/>
@@ -27,9 +31,13 @@ just applaud their success.
 <br/>
 If you are in the mindset where you can’t be really glad with people riding high,  
 then you won’t be able to stay amongst outstanding people when you’re desperate for growth, not because of them, but because of your pride and jealousy.
+In the end, It will actually become an obstacle that hinders you from getting better
 
 straight away, You will come to want to step out of the place because your pride won’t allow you to suffer from the feeling of becoming tiny.
 
 <br/>
 So, this is the reason why you should be glad to watch people riding high.
-Because, it will become the practise for you to set yourself amongst outstanding people, so you can grow up more, learning from them.
+<br/>
+Because, it will become the practise for you to set yourself amongst outstanding people, which will lead you to grow up more.
+
+![at a Northhampton camping place](/assets/images/bornfire2.jpeg)
