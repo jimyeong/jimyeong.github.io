@@ -2,8 +2,161 @@
 layout: archive
 ---
 
-{{ content }}
+<script>
 
+var renderContrubuiteSvg = function(item) {
+	var svg = document.getElementById(item.id);
+	var content = '<svg width="100%" height="140"><g transform="translate(10, 15)">';
+		var weeksData = item.data;
+		for (var i = 0; i < weeksData.length; i++) {
+			content += '<g transform="translate(' + 13*i + ', 0)">';
+			for (var j = 0; j < weeksData[i].length; j++) {
+				var dayData = weeksData[i];
+				var x = 13 + 4*i, y = 17 * j;
+				var color = item.color[dayData[j].status];
+				content += '<rect class="day" width="15" height="15" x="'+ x +'" y="'+ y +'" fill="'+ color +'" data-count="0" data-date="'+dayData[j].date+'"></rect>';
+			}
+			content += '</g>';
+		}
+	for (var k = 1; k <=7; k++) {
+		content += '<text dx="-3" dy="'+17*k+'">'+k+'</text>';
+	}
+
+	content += '</g></svg>';
+	svg.innerHTML = content;
+};
+
+var svgConfig = {
+	id : "contribuite",
+	color: ["#eee", "#d6e685", "#8cc665", "#44a340", "#1e6823"],
+	data: [
+		[
+			{date: "2015-09-13", status:0},
+			{date: "2015-09-14", status:1},
+			{date: "2015-09-15", status:2},
+			{date: "2015-09-16", status:2},
+			{date: "2015-09-17", status:2},
+			{date: "2015-09-18", status:1},
+			{date: "2015-09-19", status:4}
+		],
+		[
+			{date: "2015-09-13", status:0},
+			{date: "2015-09-14", status:2},
+			{date: "2015-09-15", status:1},
+			{date: "2015-09-16", status:3},
+			{date: "2015-09-17", status:4},
+			{date: "2015-09-18", status:2},
+			{date: "2015-09-19", status:1}
+		],
+		[
+			{date: "2015-09-13", status:1},
+			{date: "2015-09-14", status:1},
+			{date: "2015-09-15", status:2},
+			{date: "2015-09-16", status:3},
+			{date: "2015-09-17", status:2},
+			{date: "2015-09-18", status:3},
+			{date: "2015-09-19", status:1}
+		],
+		[
+			{date: "2015-09-13", status:0},
+			{date: "2015-09-14", status:0},
+			{date: "2015-09-15", status:0},
+			{date: "2015-09-16", status:0},
+			{date: "2015-09-17", status:2},
+			{date: "2015-09-18", status:3},
+			{date: "2015-09-19", status:1}
+		],
+		[
+			{date: "2015-09-13", status:2},
+			{date: "2015-09-14", status:0},
+			{date: "2015-09-15", status:3},
+			{date: "2015-09-16", status:1},
+			{date: "2015-09-17", status:1},
+			{date: "2015-09-18", status:1},
+			{date: "2015-09-19", status:0}
+		],
+		[
+			{date: "2015-09-13", status:0},
+			{date: "2015-09-14", status:0},
+			{date: "2015-09-15", status:0},
+			{date: "2015-09-16", status:1},
+			{date: "2015-09-17", status:1},
+			{date: "2015-09-18", status:1},
+			{date: "2015-09-19", status:1}
+		],
+		[
+			{date: "2015-09-13", status:0},
+			{date: "2015-09-14", status:0},
+			{date: "2015-09-15", status:1},
+			{date: "2015-09-16", status:3},
+			{date: "2015-09-17", status:3},
+			{date: "2015-09-18", status:1},
+			{date: "2015-09-19", status:2}
+		],
+		[
+			{date: "2015-09-13", status:1},
+			{date: "2015-09-14", status:1},
+			{date: "2015-09-15", status:2},
+			{date: "2015-09-16", status:1},
+			{date: "2015-09-17", status:3},
+			{date: "2015-09-18", status:2},
+			{date: "2015-09-19", status:1}
+		],
+		[
+			{date: "2015-09-13", status:0},
+			{date: "2015-09-14", status:0},
+			{date: "2015-09-15", status:1},
+			{date: "2015-09-16", status:1},
+			{date: "2015-09-17", status:2},
+			{date: "2015-09-18", status:3},
+			{date: "2015-09-19", status:0}
+		],
+		[
+			{date: "2015-09-13", status:0},
+			{date: "2015-09-14", status:0},
+			{date: "2015-09-15", status:4},
+			{date: "2015-09-16", status:3},
+			{date: "2015-09-17", status:4},
+			{date: "2015-09-18", status:0},
+			{date: "2015-09-19", status:0}
+		],
+		[
+			{date: "2015-09-13", status:0},
+			{date: "2015-09-14", status:1},
+			{date: "2015-09-15", status:0},
+			{date: "2015-09-16", status:0},
+			{date: "2015-09-17", status:1},
+			{date: "2015-09-18", status:1},
+			{date: "2015-09-19", status:0}
+		],
+		[
+			{date: "2015-09-13", status:0},
+			{date: "2015-09-14", status:1},
+			{date: "2015-09-15", status:0},
+			{date: "2015-09-16", status:0},
+			{date: "2015-09-17", status:1},
+			{date: "2015-09-18", status:0},
+			{date: "2015-09-19", status:0}
+		],
+		[
+			{date: "2015-09-13", status:1},
+			{date: "2015-09-14", status:1},
+			{date: "2015-09-15", status:1},
+			{date: "2015-09-16", status:0},
+			{date: "2015-09-17", status:2},
+			{date: "2015-09-18", status:0},
+			{date: "2015-09-19", status:3}
+		]
+	]
+};
+document.addEventListener("DOMContentLoaded", function() {
+	renderContrubuiteSvg(svgConfig);
+});
+
+</script>
+
+{{ content }}
+<div id="contribuite"></div>
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
 {% if paginator %}
