@@ -1,11 +1,9 @@
 # main links
 main:
-  - title: "Tech posts"
+  - title: "Tech blog"
     url: /posts
-  - title: "English"
-    url: /english
-  - title: "Journal"
-    url: /journal
+  - title: "Algorithms"
+    url: /algorithms
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"

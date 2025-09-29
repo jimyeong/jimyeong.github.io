@@ -1,6 +1,6 @@
 ---
 permalink: /journal
-title: "Journal"
+title: "Tech"
 excerpt: "post"
 author_profile: true
 layout: journal
