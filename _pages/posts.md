@@ -2,20 +2,61 @@
 permalink: /posts
 title: "Posts"
 excerpt: "post"
-author_profile: true
 layout: archive
+author_profile: true
 # category: "/_posts"
 #redirect_from:
 #- /about/
 #- /about.html
 ---
 
-<ul class="posts">
-    <h3>{{page.title}}</h3>
-  {% for post in page.posts %}
-    <li>
-      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </li>
+<div class="tag-filter-container">
+  <h3>Filter by Topic</h3>
+  <div class="tag-filter-buttons">
+    <button class="tag-filter-btn active" data-tag="all">All Posts <span class="tag-count">({{ site.posts | size }})</span></button>
+    {% assign all_tags = site.posts | map: 'tags' | join: ',' | split: ',' | uniq | sort %}
+    {% for tag in all_tags %}
+      {% if tag != "" %}
+        {% assign tag_posts = site.posts | where_exp: "post", "post.tags contains tag" %}
+        <button class="tag-filter-btn" data-tag="{{ tag | slugify }}">{{ tag }} <span class="tag-count">({{ tag_posts | size }})</span></button>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<div id="posts-container">
+  {% assign posts = site.posts %}
+  {% for post in posts %}
+    <div class="post-item" data-tags="{% for tag in post.tags %}{{ tag | slugify }} {% endfor %}">
+      {% include archive-single.html %}
+    </div>
   {% endfor %}
-</ul>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const filterButtons = document.querySelectorAll('.tag-filter-btn');
+  const postItems = document.querySelectorAll('.post-item');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const selectedTag = this.getAttribute('data-tag');
+
+      // Update active button
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
+
+      // Filter posts
+      postItems.forEach(item => {
+        const itemTags = item.getAttribute('data-tags');
+
+        if (selectedTag === 'all' || itemTags.includes(selectedTag)) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+</script>

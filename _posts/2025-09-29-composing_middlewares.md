@@ -16,7 +16,7 @@ tags:
 
 
 ### File Tree
-```
+```javascript
 > src/
   > app/
     > store.tsx
@@ -110,7 +110,7 @@ If it gets bigger, and you feel like you want to break it down into reusable uni
 * We will leverage middleware composition to achieve benefits similar to those of class inheritance in OOP. 
 
 
-```
+```javascript
 @@@ src/shared/api/composeBaseQuery.ts @@@
 import BaseQueryFn from @redux
 type Wrapper = (next: BaseQueryFn) => BaseQueryFn
@@ -140,7 +140,7 @@ export const baseFetch = (baseUrl: string) =>
   fetchBaseQuery({ baseUrl, credentials: "include" }); // 필요시 쿠키
 ```
 
-```
+```javascript
 2.Setting ups for videoApi.ts  (a service sample)
 
 
@@ -176,7 +176,7 @@ export const videoAPI = createAPI({
 
 
 2.If you need a global middleware that applies to all apis
-```
+```javascript
 // app/store.ts
 
 export const store = configureStore({

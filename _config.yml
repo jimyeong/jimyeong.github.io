@@ -285,3 +285,6 @@ collections:
   journal:
     output: true
     permalink: /journal
+  algorithms:
+    output: true
+    permalink: /algorithms

@@ -14,11 +14,100 @@ $info-color:#594adc !default; // 내가추가
     & > a{
         color: inherit;
     }
-    
+
 }
 .page__title {
-    
+
 }
 #introduction, #education,#work-experience, #skills--tools, #interests{
     color: #6358bc;
+}
+
+// Post title gradient colors
+.archive__item-title {
+    a {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            transform: translateX(5px);
+        }
+    }
+}
+
+// Custom tag styles
+.archive__item-tags {
+    margin: 0.5em 0;
+    font-size: 0.75em;
+
+    .page__taxonomy-item {
+        display: inline-block;
+        padding: 0.25em 0.75em;
+        margin: 0.25em 0.25em 0.25em 0;
+        background: #f3f3f3;
+        border-radius: 15px;
+        color: #594adc;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            background: #594adc;
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    }
+}
+
+// Tag filter styles
+.tag-filter-container {
+    margin: 2em 0;
+    padding: 1.5em;
+    background: #f9f9f9;
+    border-radius: 8px;
+
+    h3 {
+        margin-top: 0;
+        color: #594adc;
+        font-size: 1.2em;
+    }
+
+    .tag-filter-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5em;
+
+        .tag-filter-btn {
+            padding: 0.5em 1em;
+            border: 2px solid #594adc;
+            background: #fff;
+            color: #594adc;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            font-size: 0.9em;
+
+            &:hover {
+                background: #e8e5f7;
+            }
+
+            &.active {
+                background: #594adc;
+                color: #fff;
+            }
+
+            .tag-count {
+                margin-left: 0.3em;
+                opacity: 0.7;
+                font-size: 0.9em;
+            }
+        }
+    }
 }
