@@ -8,15 +8,11 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-$info-color:#594adc !default; // 내가추가
 #page-title{
-    // color: #6358bc;
+    color: #6358bc;
     & > a{
         color: inherit;
     }
-
-}
-.page__title {
 
 }
 #introduction, #education,#work-experience, #skills--tools, #interests{
