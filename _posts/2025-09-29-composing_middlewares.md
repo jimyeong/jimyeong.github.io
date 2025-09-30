@@ -2,7 +2,7 @@
 layout: single
 title: "Composing Middlewares"
 date: 2025-09-29 01:35 +0100
-categories: [ React]
+categories: [ React, RTK, Design patterns]
 tags:
   - RTK
   - "RTK Query"
@@ -10,7 +10,6 @@ tags:
   - "Design patterns"
   - "Composing Middlewares"
   - "Functional Programming"
-  - "Extension in functional Programming"
 ---
 ## Here, we are to figure out how to make expandable structure with Services using RTK
 
