@@ -1,53 +1,85 @@
 ---
 layout: single
-title: "Test Algorithm Post - Binary Search"
-date: 2025-09-30 00:00:00 +0000
+title: "594. Longest Harmonious Subsequence"
+date: 2025-10-02 00:00:00 +0000
 categories: [Algorithms]
 tags:
-  - Binary Search
-  - Testing
-  - Sample
+  - Sliding window
+  - Two pointers
 ---
 
 ## Problem Description
 
-This is a test post for the Algorithms section demonstrating a simple binary search implementation.
 
-## Approach
 
-Binary search is an efficient algorithm for finding an item in a sorted array by repeatedly dividing the search interval in half.
+We define a harmonious array as an array where the difference between its maximum value and its minimum value is exactly 1.
+
+Given an integer array nums, return the length of its longest harmonious subsequence among all its possible subsequences.  
+
+https://leetcode.com/problems/longest-harmonious-subsequence/description/?envType=problem-list-v2&envId=sliding-window
+
+## Clues
+
+1. diff(arr[max], arr[min]) = 1 => make it adjacent! (sorting)
+2. longest subsequence => You can skip quite many cases while you are building current the longest one.
+
 
 ### Time Complexity
-- **Best Case:** O(1)
-- **Average Case:** O(log n)
-- **Worst Case:** O(log n)
+- **Best Case:** O(N)
+- **Average Case:** 
+- **Worst Case:** 
 
 ### Space Complexity
-- O(1) for iterative approach
-- O(log n) for recursive approach (due to call stack)
+- O(1) for iterative approach, I didn't any data structure, sorted it in place.
 
-## Implementation
+## My Implementation
 
-```python
-def binary_search(arr, target):
-    left, right = 0, len(arr) - 1
+```javascript
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var findLHS = function(nums) {
+    let max_length = 0;
+    nums.sort((a,b)=> a-b)
+    let i=0, j = 0
+    j++;
+    while(j < nums.length){
+        if(nums[i] == nums[j]){
+            j++
+            continue;
+        }
+        else if(nums[j] - nums[i]==0){
+            j++
+            continue;
+        }else if(nums[j] - nums[i] == 1) {
+            max_length = Math.max(max_length, j - i + 1)
+            j++;
+            continue;
+        }else{
+            i++;
+            continue
+        }
+    }
+    return max_length
+};
+```
 
-    while left <= right:
-        mid = (left + right) // 2
+## Better Implementation
+```javascript
+var findLHS = function(nums) {
+    nums.sort((a, b) => a - b);
+    let j = 0, maxLength = 0;
 
-        if arr[mid] == target:
-            return mid
-        elif arr[mid] < target:
-            left = mid + 1
-        else:
-            right = mid - 1
+    for (let i = 0; i < nums.length; i++) {
+        while (nums[i] - nums[j] > 1) j++;
+        if (nums[i] - nums[j] === 1) {
+            maxLength = Math.max(maxLength, i - j + 1);
+        }
+    }
 
-    return -1
-
-# Example usage
-arr = [1, 3, 5, 7, 9, 11, 13, 15]
-result = binary_search(arr, 7)
-print(f"Element found at index: {result}")  # Output: 3
+    return maxLength;
+};
 ```
 
 ## Conclusion

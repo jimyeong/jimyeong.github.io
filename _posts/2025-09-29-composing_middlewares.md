@@ -8,8 +8,7 @@ tags:
   - "RTK Query"
   - "React.ts"
   - "Design patterns"
-  - "Composing Middlewares"
-  - "Functional Programming"
+
 ---
 ## Here, we are to figure out how to make expandable structure with Services using RTK
 
