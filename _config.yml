@@ -280,11 +280,22 @@ defaults:
       comments: true
       share: true
       related: true
+  # _algorithms
+  - scope:
+      path: ""
+      type: algorithms
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
 
 collections:
   journal:
     output: true
-    permalink: /journal
+    permalink: /journal/:title/
   algorithms:
     output: true
-    permalink: /algorithms
+    permalink: /algorithms/:title/
