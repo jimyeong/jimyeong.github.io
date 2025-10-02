@@ -16,7 +16,8 @@ We define a harmonious array as an array where the difference between its maximu
 
 Given an integer array nums, return the length of its longest harmonious subsequence among all its possible subsequences.  
 
-https://leetcode.com/problems/longest-harmonious-subsequence/description/?envType=problem-list-v2&envId=sliding-window
+[link text](https://leetcode.com/problems/longest-harmonious-subsequence/description/?envType=problem-list-v2&envId=sliding-window
+)
 
 ## Clues
 
