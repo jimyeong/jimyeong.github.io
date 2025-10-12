@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "594. Longest Harmonious Subsequence"
+title: "594 - Longest Harmonious Subsequence"
 date: 2025-10-02 00:00:00 +0000
 categories: [Algorithms]
 tags:
