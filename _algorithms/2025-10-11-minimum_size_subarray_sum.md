@@ -49,6 +49,33 @@ function minSubArrayLen(target, nums) {
 ```
 
 
+
+```javascript
+var minSubArrayLen = function (target, nums) {
+    let left = 0;
+    let right = 0;
+    const length = nums.length;
+    let sum = nums[0];
+    let min_length = Infinity
+    while (right < length && left <= right) {
+        if (sum >= target) {
+            min_length = Math.min(right - left + 1, min_length)
+
+            sum -= nums[left] // the order of these two lines is important
+            left += 1; // the order of these two lines is important
+            continue;
+        } else {
+            right++; // the order of these two lines is important
+            sum += nums[right] // the order of these two lines is important
+
+        }
+
+    }
+    return min_length == Infinity ? 0 : min_length;
+};
+```
+
+
 ## Test cases
 ```javascript
 Input: target = 11, nums = [1,1,1,1,1,1,1,1]
