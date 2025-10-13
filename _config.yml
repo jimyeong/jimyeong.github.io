@@ -291,6 +291,15 @@ defaults:
       comments: true
       share: true
       related: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: portfolio
+      author_profile: false
+      share: true
+      comments: false
 
 collections:
   journal:
@@ -299,3 +308,6 @@ collections:
   algorithms:
     output: true
     permalink: /algorithms/:title/
+  portfolio:
+    output: true
+    permalink: /portfolio/:title/
