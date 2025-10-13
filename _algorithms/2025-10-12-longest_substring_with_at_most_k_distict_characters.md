@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "209 - Minimum Size Subarray Sum"
+title: "340 - Longest Substring with At Most K Distinct Characters"
 date: 2025-10-02 00:00:00 +0000
 categories: [Algorithms]
 tags:
@@ -32,18 +32,18 @@ Well, I knew this would be similar to the previous quiz I resolved. but I didn't
 at first, I thought of using a Set, but I didn't know properly the method,
 If I had known that I could use count.size, count.get. It would have been much easier.
 
-
-
-## Summary
-
+For me, the common patterns i make silly approach is to try to implement from a-z. 
+If a data structure can do a job, use it.
 
 
 ### Time Complexity
-- **Best Case:** O(N)
+- **Best Case:** right traverses only once in the for loop.
+the left pointer as well it traveres maximum once => O(N)
  
 
 ### Space Complexity
-- O(1) for iterative approach, I didn't any data structure, sorted it in place.
+- O(1), the problem suggests strings so, 26characters will come in as an argument. and if duplicated, it will be less then 26chars. 
+
 
 ```javascript
 var lengthOfLongestSubstringKDistinct = function (s, k) {
