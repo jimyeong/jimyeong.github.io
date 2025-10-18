@@ -33,40 +33,7 @@ Given an integer array nums, return the length of its longest harmonious subsequ
 ### Space Complexity
 - O(1) for iterative approach, I didn't any data structure, sorted it in place.
 
-## My Implementation
-
-```javascript
-/**
- * @param {number[]} nums
- * @return {number}
- */
-var findLHS = function(nums) {
-    let max_length = 0;
-    nums.sort((a,b)=> a-b)
-    let i=0, j = 0
-    j++;
-    while(j < nums.length){
-        if(nums[i] == nums[j]){
-            j++
-            continue;
-        }
-        else if(nums[j] - nums[i]==0){
-            j++
-            continue;
-        }else if(nums[j] - nums[i] == 1) {
-            max_length = Math.max(max_length, j - i + 1)
-            j++;
-            continue;
-        }else{
-            i++;
-            continue
-        }
-    }
-    return max_length
-};
-```
-
-## Better Implementation
+## Implementation
 ```javascript
 var findLHS = function(nums) {
     nums.sort((a, b) => a - b);

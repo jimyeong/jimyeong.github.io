@@ -6,6 +6,8 @@ layout: archive
 author_profile: true
 ---
 
+
+
 <div class="portfolio-intro">
   <p>Here are some of the projects I've worked on. Each showcases different skills and technologies I've mastered throughout my development journey.</p>
 </div>
