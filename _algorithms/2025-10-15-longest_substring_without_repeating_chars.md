@@ -28,7 +28,7 @@ Explanation: The substring is "aa" with length 2.
 **Trigger:**  
 - string or array 
 - “Find the length of the longest contiguous subarray (or substring) that satisfies a given condition.”, 
-- There shouldn't be any duplication in window 
+- There shouldn't be any duplication in window (Jump with Map<char, idx>)
 
 ### Time Complexity
 
