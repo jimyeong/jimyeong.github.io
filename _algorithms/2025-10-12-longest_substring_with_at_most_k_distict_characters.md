@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "340 - Longest Substring with At Most K Distinct Characters"
-date: 2025-10-02 00:00:00 +0000
+date: 2025-10-12 00:00:00 +0000
 categories: [Algorithms]
 tags:
   - Sliding window

@@ -1,0 +1,80 @@
+---
+layout: single
+title: "45. Jump Game II"
+date: 2025-10-09 00:00:00 +0000
+categories: [Algorithms]
+tags:
+  - Greedy
+  - DFS
+---
+
+You are given a 0-indexed array of integers nums of length n. You are initially positioned at index 0.
+
+Each element nums[i] represents the maximum length of a forward jump from index i. In other words, if you are at index i, you can jump to any index (i + j) where:
+
+0 <= j <= nums[i] and
+i + j < n
+
+Return the minimum number of jumps to reach index n - 1. The test cases are generated such that you can reach index n - 1.
+
+
+```
+
+Example 1:
+
+Input: nums = [2,3,1,1,4]
+Output: 2
+Explanation: The minimum number of jumps to reach the last index is 2. Jump 1 step from index 0 to 1, then 3 steps to the last index.
+```
+
+[45. Jump Game II](https://leetcode.com/problems/jump-game-ii/)
+
+
+## Pattern Insight 🧰
+**Pattern:** DFS or Greedy
+**Trigger:**  
+- if you are at index i, you can jump to any index (i + j) where: **0 <= j <= nums[i] and i + j < n** 
+- The Minimum number of jump
+
+### Time Complexity
+O(N)
+
+
+### Space Complexity
+O(1)
+
+### Edge Cases
+
+
+**Core Idea:**  
+- Find the maximum index to reach by a jump ex) num[0] = 2 => maximum index to reach is 2(you can either go to 1 or 2), then you get a window([1,2]) to check. then , within the window find the maximum index to reach with a jump within the window([1,2]) =>  num[1]=> 4(maximum index 4) num[2]=>3. Max(4,3) = 4, so index 4 is the maximum index to reach from the window [1,2], at every window's end, you will jump.
+
+
+
+
+```javascript
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var jump = function(nums) {
+  const n = nums.length;
+  if (n < 2) return 0;
+
+  let jumps = 0;
+  let end = 0;       
+  let farthest = 0;   
+
+  for (let i = 0; i < n - 1; i++) {
+    farthest = Math.max(farthest, i + nums[i]);
+    if (i === end) {
+      jumps++;
+      end = farthest;
+      if (end >= n - 1) break; 
+    }
+  }
+  return jumps;
+};
+```
+
+
