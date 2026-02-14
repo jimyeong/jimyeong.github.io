@@ -8,4 +8,4 @@ I'm Jimmy Jung, a developer based in the UK. I build systems to solve problems I
 
 This blog is where I document the technical decisions behind those projects: why I chose one approach over another, what trade-offs I considered, and what I'd do differently next time.
 
-I write in two places. [LinkedIn](https://www.linkedin.com/in/jimyeong-jung/) gets the story. This blog gets the engineering.
+I write in two places. [LinkedIn](https://www.linkedin.com/in/jimyeong-jung-725a9223a/?locale=en_US) gets the story. This blog gets the engineering.

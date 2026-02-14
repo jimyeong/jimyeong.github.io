@@ -1,6 +1,6 @@
-title: jimmy jung
+title: "jimyeong jung"
 url: "https://jimyeong.github.io"
-baseurl: ""
+baseurl: "/tech-blog"
 description: "I build systems that solve real problems — then write about the technical decisions behind them."
 
 markdown: kramdown
