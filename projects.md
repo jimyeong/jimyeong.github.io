@@ -11,7 +11,7 @@ permalink: /projects/
     <div class="project-tech">NestJS · MQTT · PostgreSQL · AWS SNS</div>
   </div>
   <div class="project-item">
-    <div class="project-name"><a href="https://github.com/jimyeong/sp6-stockmanager-server">Ownload — Stock Manager</a></div>
+    <div class="project-name"><a href="https://github.com/jimyeong/sp6_stockmanager_server">Ownload — Stock Manager</a></div>
     <div class="project-desc">Expiry tracking system for small retail stores. Batch registration, expiry alerts, and a search-first UI designed for daily use by non-technical store owners.</div>
     <div class="project-tech">React · TypeScript · Node.js · PostgreSQL</div>
   </div>
