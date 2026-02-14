@@ -2,7 +2,7 @@
 
 Personal tech blog. Writing about technical decisions behind my projects.
 
-https://jimyeong.github.io/tech-blog/
+https://jimyeong.github.io
 
 ## Local dev
 ```
