@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="intro">
+  <p>I build systems that solve real problems — then write about the technical decisions behind them.</p>
+  <div class="intro-links">
+    <a href="https://github.com/jimyeong">GitHub</a>
+    <span>·</span>
+    <a href="https://www.linkedin.com/in/jimyeong-jung/">LinkedIn</a>
+    <span>·</span>
+    <a href="mailto:your@email.com">Email</a>
+  </div>
+</div>
+
+<div class="section-label">Recent Writing</div>
+
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li class="post-item">
+    <div>
+      <a class="post-title-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {% if post.summary %}
+      <div class="post-summary">{{ post.summary }}</div>
+      {% endif %}
+      {% if post.tags.size > 0 %}
+      <div class="post-tag">{{ post.tags | join: " · " }}</div>
+      {% endif %}
+    </div>
+    <div class="post-meta">{{ post.date | date: "%Y-%m" }}</div>
+  </li>
+  {% endfor %}
+</ul>

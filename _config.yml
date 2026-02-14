@@ -1,0 +1,16 @@
+title: jimmy jung
+url: "https://jimyeong.github.io"
+baseurl: ""
+description: "I build systems that solve real problems — then write about the technical decisions behind them."
+
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# No theme - we're using our own layouts
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
